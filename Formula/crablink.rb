@@ -3,8 +3,8 @@ class Crablink < Formula
   desc "用 Rust 写的自托管短链服务：一个 server，一个 CLI，一个 SQLite 文件"
   homepage "https://github.com/Z761293629/crablink"
   # macOS arm64. Intel Macs have no build: they load this url, then fail the arch requirement.
-  url "https://github.com/Z761293629/crablink/releases/download/v0.5.0/crablink-aarch64-apple-darwin.tar.gz"
-  sha256 "07e42d505a5189b5c273c4b0c2194ce8c44c1a37495e99397799e9595b80e7e9"
+  url "https://github.com/Z761293629/crablink/releases/download/v0.6.0/crablink-aarch64-apple-darwin.tar.gz"
+  sha256 "2ff728018f4d10445a7d602dcd12f01988b049eb7e400ee8a5f0ee87df3418a5"
 
   on_macos do
     depends_on arch: :arm64
@@ -12,12 +12,12 @@ class Crablink < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/Z761293629/crablink/releases/download/v0.5.0/crablink-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "4a4b570f3b63880f0663b523b396098ff5c380659336783543a853bb230912b3"
+      url "https://github.com/Z761293629/crablink/releases/download/v0.6.0/crablink-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "80e5c762277cfa4a4b61cd0d16c0f2734b836e825bbef6b2fa1e74c83f564d15"
     end
     on_arm do
-      url "https://github.com/Z761293629/crablink/releases/download/v0.5.0/crablink-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fe1679987aeb9e7c654eda52a4b32132b3585c8c45077458083485c6dc8c20e1"
+      url "https://github.com/Z761293629/crablink/releases/download/v0.6.0/crablink-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "0077d0fb271a46bfd0b1c5887784fdbcc581d17fb9602862b25a12a351496ac7"
     end
   end
 
